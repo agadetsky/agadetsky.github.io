@@ -1,0 +1,769 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Artyom Gadetsky}
+
+% PDF settings and properties.
+\hypersetup{
+pdfauthor={\CVAuthor},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{http://bayesgroup.ru}{Bayesian Methods Research Group, Moscow, Russia}
+\par
+artygadetsky@yandex.ru
+\,\SubBulletSymbol\,
+\href{https://github.com/agadetsky}{https://github.com/agadetsky}
+\,\SubBulletSymbol\,
++7\,(925)\,326-70-02
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{https://www.hse.ru/en/}
+{\textbf{National Research University Higher School of Economics}}
+\par
+\href{https://www.skoltech.ru/en/}{\textbf{Skolkovo Institute of Science and Technology}}
+\par
+Moscow, Russia
+
+\Gap
+\BulletItem
+M.S. in
+\href{https://www.hse.ru/en/ma/sltheory/}
+{Statistical Learning Theory}
+\hfill
+\DatestampY{2018} --
+Present
+\Gap
+
+\Entry
+\href{https://www.hse.ru/en/}
+{\textbf{National Research University Higher School of Economics}}
+\par
+Moscow, Russia
+
+\Gap
+\BulletItem
+B.S. in
+\href{https://www.hse.ru/en/ba/ami/}
+{Computer Science, Machine Learning Major}
+\hfill
+\DatestampY{2014} --
+\DatestampY{2018}
+\begin{Detail}
+\SubBulletItem
+Degree with honors
+\SubBulletItem
+GPA: 4.75 / 5
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\Entry
+\href{http://bayesgroup.ru}
+{\textbf{Bayesian Methods Research Group}}
+\par
+Moscow, Russia
+
+\Gap
+\BulletItem
+Supervisor: Dmitry Vetrov
+\hfill
+\DatestampY{2016} --
+Present
+\begin{Detail}
+\SubBulletItem
+Description: conducting research on RNNs and causal inference
+\end{Detail}
+
+\Gap
+
+\Entry
+\textbf{Sberbank-HSE Laboratory}
+\par
+Moscow, Russia
+\BulletItem
+Supervisor: Evgeny Sokolov
+\hfill
+\DatestampY{2017} --
+Present
+\begin{Detail}
+\SubBulletItem
+Description: conducting research on different tasks for Sberbank Russia
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\Entry
+\href{https://www.hse.ru/en/}
+{\textbf{National Research University Higher School of Economics}}
+\par
+Moscow, Russia
+
+\Gap
+\BulletItem
+Topic: Causal inference for discrete data
+\hfill
+Present
+\begin{Detail}
+\SubBulletItem
+Supervisor:
+Dmitry Vetrov
+\SubBulletItem
+Description:
+Conducting research on structure learning of DAG for discrete data.
+\end{Detail}
+
+\Entry
+\href{https://www.hse.ru/en/}
+{\textbf{National Research University Higher School of Economics}}
+\par
+Moscow, Russia
+
+\Gap
+\BulletItem
+Topic: Generators of Words Definitions
+\hfill
+\DatestampYMD{2016}{10}{01} --
+\DatestampYMD{2018}{08}{01}
+\begin{Detail}
+\SubBulletItem
+Supervisor:
+Dmitry Vetrov
+\SubBulletItem
+Description:
+Work proposes conditional language model for word’s definitions. \newline
+Conducted experiments show that one particular word embedding contains \newline
+information about most meanings of the corresponding word and that \newline
+particular components of word embeddings can be interpretable.
+\end{Detail}
+
+\Gap
+
+\Entry
+\href{http://graphics.cs.msu.ru/en}
+{\textbf{Graphics and Media Lab, Moscow State University}}
+\par
+Moscow, Russia
+
+\Gap
+\BulletItem
+Topic: Multiple Object Tracking
+\hfill
+\DatestampYMD{2016}{07}{01} --
+\DatestampYMD{2016}{08}{31}
+\begin{Detail}
+\SubBulletItem
+Supervisor:
+Anton Konushin
+\SubBulletItem
+Description:
+Research on application of CNNs for tracking people in the crowd
+\end{Detail}
+
+\Gap
+
+\Entry
+\href{https://www.hse.ru/en/}
+{\textbf{National Research University Higher School of Economics}}
+\par
+Moscow, Russia
+
+\Gap
+\BulletItem
+Topic: 2D Scene Parsing with Generative Models
+\hfill
+\DatestampYMD{2015}{12}{01} --
+\DatestampYMD{2016}{06}{30}
+\begin{Detail}
+\SubBulletItem
+Supervisor:
+Anton Konushin
+\SubBulletItem
+Description:
+Application of CNN for object classification and object labeling to \newline
+set of synthetic data
+\end{Detail}
+
+\Gap
+
+\Entry
+\href{https://www.hse.ru/en/}
+{\textbf{National Research University Higher School of Economics}}
+\par
+Moscow, Russia
+
+\Gap
+\BulletItem
+Topic: Road Sign Classification
+\hfill
+\DatestampYMD{2015}{07}{01} --
+\DatestampYMD{2015}{08}{31}
+\begin{Detail}
+\SubBulletItem
+Supervisor:
+Anton Konushin
+\SubBulletItem
+Description:
+Achieved 98 \% accuracy in multiclass road sign classification \newline
+using HOG and SVM
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+\newpage
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\SubSection
+{Conferences}
+{Conferences}
+{PDF:Conferences}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+
+\Gap
+\Item
+\href{https://aclanthology.info/papers/P18-2043/p18-2043}{\textit{Conditional Generators of Words Definitions}}
+\Item
+Artyom Gadetsky, Ilya Yakubovsky, Dmitry Vetrov
+\Item
+In proceedings of the 56th Annual Meeting of the \newline
+Association for Computational Linguistics (ACL), 2018
+
+\Item
+\href{http://www.dialog-21.ru/en/}{\textit{Conditional Generators of Words Definitions} (poster session)}
+\Item
+Artyom Gadetsky, Ilya Yakubovsky, Dmitry Vetrov
+\Item
+Best Student Work at DIALOGUE 2018
+
+\Gap
+\Item
+\href{http://ainlconf.ru/2017}{\textit{Conditional Generators of Words Definitions} (poster session)}
+\Item
+Artyom Gadetsky, Ilya Yakubovsky, Dmitry Vetrov
+\Item
+Presented poster at AINL 2017
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards}
+{Awards}
+{PDF:Awards}
+
+\BulletItem
+\href{https://nirs.hse.ru/nirs/}{Open HSE Student Research Paper Competition}
+\begin{Detail}
+\Item
+Description: Winner (3rd absolute place)
+\end{Detail}
+
+\BulletItem
+\href{https://www.hse.ru/gold/cm/silver/2018/gadetsky}{Silver Nestling Golden HSE Award}
+\begin{Detail}
+\Item
+Description: Finalist (nominee)
+\end{Detail}
+
+\BulletItem
+DIALOGUE 2018 conference
+\begin{Detail}
+\Item
+Description: Best Student Work for "Conditional Generators of Words Definitions"
+\end{Detail}
+
+\BulletItem
+Microsoft Azure Machine Learning Hack
+\begin{Detail}
+\Item
+Description: Special award from Alfa Bank for clustering customersby their social statuses
+\end{Detail}
+
+\Gap
+
+\BulletItem
+Kazan Big Data Summit Hack
+\begin{Detail}
+\Item
+Description: Prize winner for clustering Instagram profiles intocommerce / non-commerce classes
+\end{Detail}
+
+\BulletItem
+\href{https://yandex.com/scholarships/students}{Ilya Segalovich CS HSE Scholarship 2017}
+\begin{Detail}
+\Item
+Description: Nominee
+\end{Detail}
+
+\BulletItem
+\href{https://yandex.com/scholarships/students}{Ilya Segalovich CS HSE Scholarship 2016}
+\begin{Detail}
+\Item
+Description: Nominee
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%
+%% TALKS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Talks}
+{Talks}
+{Talks}
+
+\Item
+\href{http://datafest.ru}{DataFest 2018 (in russian)}
+\begin{Detail}
+\Item
+Topic: Conditional Generators of Words Definitions
+\end{Detail}
+
+\Gap
+\Item
+\href{http://www.dialog-21.ru/en/}{DIALOGUE 2018 (in russian)}
+\begin{Detail}
+\Item
+Topic: Word Sense Induction and Definition Modeling
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%
+%% OTHER EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Other experience}
+{Other experience}
+{PDF:OtherExperience}
+
+\Gap
+\BulletItem
+\href{https://www.microsoft.com/en-us/research/event/ai-summer-school-2018/}{Microsoft Research AI Summer School}
+\hfill
+\DatestampYMD{2018}{07}{01}
+
+\BigGap
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEACHING %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Teaching}
+{Teaching}
+{PDF:Teaching}
+
+\BulletItem
+Continuous Optimization course at HSE
+\hfill
+Present
+\begin{Detail}
+\Item
+Role: Teaching fellow
+\end{Detail}
+
+\BulletItem
+Data Analysis course at HSE
+\hfill
+\DatestampY{2018}
+\begin{Detail}
+\Item
+Role: Teaching fellow
+\end{Detail}
+
+\BulletItem
+\href{http://deepbayes.ru}{DeepBayes 2018 Summer School}
+\hfill
+\DatestampYMD{2018}{07}{01}
+\begin{Detail}
+\Item
+Role: Teaching assistant
+\end{Detail}
+
+\Gap
+
+\BulletItem
+\href{http://deepbayes.ru/2017/}{DeepBayes 2017 Summer School}
+\hfill
+\DatestampYMD{2017}{07}{01}
+\begin{Detail}
+\Item
+Role: Teaching assistant
+\end{Detail}
+
+\Gap
+
+\BulletItem
+\href{https://www.coursera.org/learn/bayesian-methods-in-machine-learning}
+{Coursera ”Bayesian Methods in Machine Learning” course}
+\hfill
+Present
+\begin{Detail}
+\Item
+Role: Teaching assistant
+\end{Detail}
+
+\Gap
+
+\BulletItem
+”Bayesian Methods in Machine Learning” course at \href{https://yandexdataschool.com}{YSDA}
+and \href{https://cs.msu.ru/en}{CMC MSU}
+\hfill
+Present
+\begin{Detail}
+\Item
+Role: Teaching assistant
+\end{Detail}
+
+\Gap
+
+\BulletItem
+Machine Learning course at \href{https://cs.hse.ru/en/}{CS HSE}
+\hfill
+\DatestampYMD{2017}{09}{01} --
+\DatestampYMD{2018}{07}{01}
+\begin{Detail}
+\Item
+Role: Teaching assistant
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROJECTS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Projects}
+{Projects}
+{PDF:Projects}
+
+\BulletItem
+Web Streamer app
+\begin{Detail}
+\Item
+Implemented web application for web streaming using:
+\SubBulletItem
+Flask + Nginx rtmp module
+\SubBulletItem
+HLS/MPEG-DASH protocols for data transfer
+\SubBulletItem
+ffmpeg for encoding
+\end{Detail}
+
+\Gap
+
+\BulletItem
+File Integrity tool
+\begin{Detail}
+\Item
+Implemented *nix utility for tracking changes of files using:
+\SubBulletItem
+C/C++ and Berkeley database
+\SubBulletItem
+OpenSSL for hashing
+\end{Detail}
+
+\Gap
+
+\BulletItem
+Instagram stats app
+\begin{Detail}
+\Item
+Implemented web application which provides statisticsabout Instagram profile using:
+\SubBulletItem
+Flask + Nginx for backend
+\SubBulletItem
+NLTK + Python scientist’s toolkit for text analysis
+\SubBulletItem
+Convolutional neural network for photo analysis
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+Russian: Native language.
+
+\Gap
+\BulletItem
+English: Fluent
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\BulletItem
+Machine Learning
+
+\BulletItem
+Deep Learning
+
+\BulletItem
+Bayesian Machine Learning
+
+\BulletItem
+Python, Pytorch
+
+\BulletItem
+Feel free with Linux
+
+\iffalse
+% Manual page break.
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% THIS IS A SECTION WITH USAGE NOTES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Declare a new group to limit the scope of \color to this section.
+\begingroup
+\color{red}
+
+\Section
+{This is a\newline
+Section\newline
+With\newline
+Usage Notes}
+{This is a Section With Usage Notes (For PDF Bookmark)}
+{PDF:ThisIsASectionWithUsageNotes:ForPDFLink}
+
+\SubSection
+{This is a SubSection}
+{This is a SubSection (For PDF Bookmark)}
+{PDF:ThisIsASubSection:ForPDFLink}
+
+\Gap
+\BulletItem
+Use \CodeCommand{Section\{a\}\{b\}\{c\}} and
+\CodeCommand{SubSection\{a\}\{b\}\{c\}}
+to create sections and subsections, where
+\Code{a} is the heading displayed on the page,
+\Code{b} is the PDF bookmark heading, and
+\Code{c} is the internal PDF link (must be unique).
+Sections and subsections will appear in the PDF bookmarks.
+Note the CamelCase command names.
+
+\Gap
+\BulletItem
+Use
+\CodeCommand{Entry},
+\CodeCommand{BulletItem},
+\CodeCommand{SubBulletItem},
+\CodeCommand{Item},
+\CodeCommand{SubItem},
+\CodeCommand{NumberedItem},
+etc.,
+to create entries in the main body of the CV.
+
+\Gap
+\BulletItem
+Enclose entry details between
+\CodeCommand{begin\{Detail\}} and
+\CodeCommand{end\{Detail\}}
+so that they are typeset in a smaller font.
+\begin{Detail}
+\Item
+This is an example of entry detail text enclosed in a \Code{Detail} environment.
+\end{Detail}
+
+\Gap
+\BulletItem
+Use \CodeCommand{Gap} and \CodeCommand{BigGap} to insert vertical spaces between entries to improve layout.
+
+\BigGap
+\SubSection
+{This is Another SubSection}
+{This is Another Subsection (For PDF Bookmark)}
+{PDF:ThisIsAnotherSubSection:ForPDFLink}
+
+\Gap
+\Entry
+This is a plain \CodeCommand{Entry},
+followed by an \CodeCommand{hfill} and a date range
+\hfill
+\DatestampYM{2015}{10} --
+\DatestampYM{2015}{12}
+
+\Gap
+\BulletItem
+This is a \CodeCommand{BulletItem}.
+\Item
+This is an \CodeCommand{Item}, which has no bullet.
+Note the alignment with the \CodeCommand{BulletItem} above.
+
+\Gap
+\SubBulletItem
+This is a \CodeCommand{SubBulletItem}.
+\SubItem
+This is a \CodeCommand{SubItem}, which has no bullet.
+Note the alignment with the \CodeCommand{SubBulletItem} above.
+
+\Gap
+\NumberedItem{[42]}
+This is a \CodeCommand{NumberedItem}.
+Change the value of the macro \CodeCommand{MaxNumberedItem} to adjust the indentation width.
+
+\BigGap
+\SubSection
+{Line, Paragraph, and Page Breaks}
+{Line, Paragraph, and Page Breaks (For PDF Bookmark)}
+{PDF:LineParagraphAndPageBreaks:ForPDFLink}
+
+\Gap
+\BulletItem
+To create a new line within the same paragraph (i.e., preserving the same paragraph indentation), use \CodeCommand{newline} instead of \CodeCommand{\textbackslash};
+the latter will reset the paragraph indentation.
+
+\Gap
+\BulletItem
+To create a new paragraph, use \CodeCommand{par} or simply leave an empty line.
+Paragraph indentations (from
+\CodeCommand{Entry},
+\CodeCommand{BulletItem},
+\CodeCommand{SubBulletItem},
+\CodeCommand{Item},
+\CodeCommand{SubItem},
+\CodeCommand{NumberedItem},
+etc.) do not carry across different paragraphs.
+
+\Gap
+\BulletItem
+To create a new page, use \CodeCommand{newpage}.
+
+\BigGap
+\SubSection
+{Dates}
+{Dates (For PDF Bookmark)}
+{PDF:Dates:ForPDFLink}
+
+\Gap
+\BulletItem
+Use the following macros to specify and display dates consistently:
+\SubBulletItem
+\CodeCommand{DatestampYMD\{yyyy\}\{MM\}\{dd\}}
+(e.g., \CodeCommand{DatestampYMD\{2008\}\{01\}\{15\}})
+\SubBulletItem
+\CodeCommand{DatestampYM\{yyyy\}\{MM\}}
+(e.g., \CodeCommand{DatestampYM\{2008\}\{01\}})
+\SubBulletItem
+\CodeCommand{DatestampY\{yyyy\}}
+(e.g., \CodeCommand{DatestampY\{2008\}})
+
+\Gap
+\BulletItem
+Change the date format option passed to the document class to adjust how dates are displayed throughout the document:
+\SubBulletItem
+\Code{MMMyyyy} (``Jan~2008'')
+\SubBulletItem
+\Code{ddMMMyyyy} (``15~Jan~2008'')
+\SubBulletItem
+\Code{MMMMyyyy} (``January~2008'')
+\SubBulletItem
+\Code{ddMMMMyyyy} (``15~January~2008'')
+\SubBulletItem
+\Code{yyyyMMdd} (``2008-01-15'')
+\SubBulletItem
+\Code{yyyyMM} (``2008-01'')
+\SubBulletItem
+\Code{yyyy} (``2008'')
+
+\endgroup
+
+\fi
+
+\end{Body}
+
+\end{document}
