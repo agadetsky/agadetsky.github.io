@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table style="width:100%;max-width:920px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Artyom Gadetsky</name>
               </p>
-              <p align="justify">I am 3rd year PhD student at <a href="https://brbiclab.epfl.ch">MLBio lab</a>, <a href="https://www.epfl.ch/education/phd/edic-computer-and-communication-sciences/">EPFL</a> in Lausanne, supervised by <a href="https://brbiclab.epfl.ch/team">Maria Brbic</a>.  Currently, I am working on making foundation models quickly and reliably adapt to unseen tasks without human supervision. Previously, I was a researcher at <a href="https://cs.hse.ru/en/">CS HSE</a> and <a href="https://bayesgroup.ru">BayesGroup</a> supervised by <a href="https://bayesgroup.ru/people/dmitry-vetrov/">Dmitry Vetrov</a>, working on stochastic optimization w.r.t. discrete distributions over structured objects such as graphs, permutations, etc. I am also interested in different applications of core machine learning algorithms to solve real-life problems in sciences (AI4Science).
+              <p align="justify">I currently work on reinforcement learning post-training at <a href="https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models">Apple</a>. Previously, I received my Ph.D. in Computer Science from <a href="https://www.epfl.ch/education/phd/edic-computer-and-communication-sciences/">EPFL</a>. My <a href="https://infoscience.epfl.ch/entities/publication/ffec2d0d-4d5c-479f-af3a-d137efbf0bce">PhD thesis</a> was on enabling foundation models to discover solutions to unseen problems and adapt to new tasks without human supervision.
               </p>
               <p style="text-align:center">
                 <a href="mailto:artygadetsky@yandex.ru">Email</a> &nbsp/&nbsp
@@ -44,13 +44,39 @@
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table class="publication-list"><tbody>
 
-          <tr onmouseout="joint_stop()" onmouseover="joint_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
-                <img src='images/joint.png' height=200px style="display: block; margin: auto;">
+          <tr class="publication">
+            <td class="publication-media">
+                <a class="publication-image-link" href="images/uprm.jpeg" target="_blank" rel="noopener" aria-label="Open the unsupervised process reward models figure at full size">
+                  <img class="publication-image" src="images/uprm.jpeg" alt="Unsupervised process reward model identifying the first erroneous reasoning step" loading="lazy">
+                </a>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td class="publication-content">
+              <a href="https://arxiv.org/abs/2605.10158">
+                <papertitle>Unsupervised Process Reward Models</papertitle>
+              </a>
+              <br>
+              <strong>Artyom Gadetsky*</strong>,
+              <a href="https://scholar.google.com/citations?user=BGVWciMAAAAJ&hl=en">Maxim Kodryan*</a>,
+              <a href="https://sibasmarak.github.io/">Siba Smarak Panigrahi</a>,
+              <a href="https://csguoh.github.io/">Hang Guo</a>,
+              <a href="https://scholar.google.com/citations?user=ltxmeroAAAAJ&hl=ru&oi=ao">Maria Brbic</a>
+              <br>
+              <em>preprint</em>
+              <br>
+              <a href="https://arxiv.org/abs/2605.10158">arxiv</a>
+              <p class="publication-description">We introduce a method for training process reward models for math reasoning without any supervision, i.e., it requires neither step-level annotations nor ground-truth verification of final answers.</p>
+            </td>
+          </tr>
+
+          <tr class="publication">
+            <td class="publication-media">
+                <a class="publication-image-link" href="images/joint.png" target="_blank" rel="noopener" aria-label="Open the joint inference figure at full size">
+                  <img class="publication-image" src="images/joint.png" alt="Joint inference method overview" loading="lazy">
+                </a>
+            </td>
+            <td class="publication-content">
                <!-- <a href=""> -->
                 <a href="https://openreview.net/forum?id=ohJxgRLlLt">
                 <papertitle>Large (Vision) Language Models are Unsupervised In-Context Learners</papertitle>
@@ -73,16 +99,17 @@
               <a href="https://github.com/mlbio-epfl/joint-inference/">code</a> /
               <a href="data/joint.bib">bibtex</a> /
               <a href="posters/jointinference_iclr2025.png">poster</a>
-              <p></p>
-              <p align="justify">We introduce a joint inference framework for large (vision) language models to perform unsupervised adaptation on a given task, resulting in the improved performance upon independent zero-shot predictions.</p>
+              <p class="publication-description">We introduce a joint inference framework for large (vision) language models to perform unsupervised adaptation on a given task, resulting in the improved performance upon independent zero-shot predictions.</p>
             </td>
           </tr>
 
-          <tr onmouseout="turtle_stop()" onmouseover="turtle_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
-                <img src='images/turtle_setting.png' height=300px style="display: block; margin: auto;">
+          <tr class="publication">
+            <td class="publication-media">
+                <a class="publication-image-link" href="images/turtle_setting.png" target="_blank" rel="noopener" aria-label="Open the TURTLE figure at full size">
+                  <img class="publication-image" src="images/turtle_setting.png" alt="TURTLE unsupervised transfer method overview" loading="lazy">
+                </a>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td class="publication-content">
                <!-- <a href=""> -->
                 <a href="https://proceedings.mlr.press/v235/gadetsky24a.html">
                 <papertitle>Let Go of Your Labels with Unsupervised Transfer</papertitle>
@@ -101,16 +128,17 @@
               <a href="https://github.com/mlbio-epfl/turtle">code</a> /
               <a href="data/turtle.bib">bibtex</a> /
               <a href="posters/turtle_icml2024.png">poster</a>
-              <p></p>
-              <p align="justify">An approach to perform fully unsupervised transfer on a downstream dataset given representation spaces of foundation models. Although being fully unsupervised, our approach outperforms CLIP zero-shot transfer and sometimes matches optimal supervised performance!</p>
+              <p class="publication-description">An approach to perform fully unsupervised transfer on a downstream dataset given representation spaces of foundation models. Although being fully unsupervised, our approach outperforms CLIP zero-shot transfer and sometimes matches optimal supervised performance!</p>
             </td>
           </tr>
 
-          <tr onmouseout="falcon_stop()" onmouseover="falcon_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
-                <img src='images/falcon_clusters.png' height=300px style="display: block; margin: auto;">
+          <tr class="publication">
+            <td class="publication-media">
+                <a class="publication-image-link" href="images/falcon_clusters.png" target="_blank" rel="noopener" aria-label="Open the FALCON figure at full size">
+                  <img class="publication-image" src="images/falcon_clusters.png" alt="FALCON fine-grained class clusters" loading="lazy">
+                </a>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td class="publication-content">
                <!-- <a href=""> -->
                 <a href="https://proceedings.mlr.press/v235/grcic24a.html">
                 <papertitle>Fine-grained Classes and How to Find Them</papertitle>
@@ -129,16 +157,17 @@
               <a href="https://github.com/mlbio-epfl/falcon">code</a> /
               <a href="data/falcon.bib">bibtex</a> /
               <a href="posters/falcon_icml2024.pdf">poster</a>
-              <p></p>
-              <p align="justify">We develop the approach to infer fine-grained labels given coarsely labeled dataset.</p>
+              <p class="publication-description">We develop the approach to infer fine-grained labels given coarsely labeled dataset.</p>
             </td>
           </tr>
 
-          <tr onmouseout="hume_stop()" onmouseover="hume_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/hume_overview.png' height=150px>
+          <tr class="publication">
+            <td class="publication-media">
+                <a class="publication-image-link" href="images/hume_overview.png" target="_blank" rel="noopener" aria-label="Open the HUME figure at full size">
+                  <img class="publication-image" src="images/hume_overview.png" alt="HUME framework overview" loading="lazy">
+                </a>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td class="publication-content">
                <!-- <a href=""> -->
                 <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/be38c74290c251820e396680a82ce12d-Abstract-Conference.html">
                 <papertitle>The Pursuit of Human Labeling: A New Perspective on Unsupervised Learning</papertitle>
@@ -154,19 +183,20 @@
               <a href="https://brbiclab.epfl.ch/projects/hume/">project page</a> /
               <a href="https://arxiv.org/abs/2311.02940">arxiv</a> /
               <a href="https://github.com/mlbio-epfl/hume">code</a> /
-              <a href="data/hume.bib">bibtex</a> /<br/>
+              <a href="data/hume.bib">bibtex</a>
               <a href="slides/HUME_NeurIPS2023.pdf">NeurIPS slides</a> /
               <a href="posters/hume_neurips2023.pdf">poster</a>
-              <p></p>
-              <p align="justify">Simple model-agnostic framework for inferring human labeling of a given dataset without any external supervision.</p>
+              <p class="publication-description">Simple model-agnostic framework for inferring human labeling of a given dataset without any external supervision.</p>
             </td>
           </tr>
 
-          <tr onmouseout="gumbelmax_stop()" onmouseover="gumbelmax_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
-                <img src='images/lowvar_structured.jpg' height=290px style="display: block; margin: auto;">
+          <tr class="publication">
+            <td class="publication-media">
+                <a class="publication-image-link" href="images/lowvar_structured.jpg" target="_blank" rel="noopener" aria-label="Open the recursive Gumbel-Max figure at full size">
+                  <img class="publication-image" src="images/lowvar_structured.jpg" alt="Recursive Gumbel-Max inference illustration" loading="lazy">
+                </a>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td class="publication-content">
                <!-- <a href=""> -->
                 <a href="https://proceedings.neurips.cc/paper/2021/hash/5b658d2a925565f0755e035597f8d22f-Abstract.html">
                 <papertitle>Leveraging Recursive Gumbel-Max Trick for Approximate Inference in Combinatorial Spaces</papertitle>
@@ -183,19 +213,20 @@
               <br>
               <a href="https://arxiv.org/abs/2110.15072">arxiv</a> /
               <a href="https://github.com/RakitinDen/pytorch-recursive-gumbel-max-trick">code</a> /
-              <a href="data/structuredgm.bib">bibtex</a> / <br/>
+              <a href="data/structuredgm.bib">bibtex</a> /
               <a href="slides/NeurIPS2021_slides.pdf">NeurIPS slides</a> /
               <a href="posters/poster_neurips2021.pdf">poster</a>
-              <p></p>
-              <p align="justify">Tractable discrete distributions and stochastic optimization w.r.t. discrete distributions over structured objects (i.e. graphs, permutations, top-k).</p>
+              <p class="publication-description">Tractable discrete distributions and stochastic optimization w.r.t. discrete distributions over structured objects (i.e. graphs, permutations, top-k).</p>
             </td>
           </tr>
 
-          <tr onmouseout="lowvar_pl_stop()" onmouseover="lowvar_pl_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/lowvar_pl.jpg' height=290px>
+          <tr class="publication">
+            <td class="publication-media">
+                <a class="publication-image-link" href="images/lowvar_pl.jpg" target="_blank" rel="noopener" aria-label="Open the Plackett-Luce figure at full size">
+                  <img class="publication-image" src="images/lowvar_pl.jpg" alt="Plackett-Luce gradient variance comparison" loading="lazy">
+                </a>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td class="publication-content">
                <!-- <a href=""> -->
                 <a href="https://ojs.aaai.org//index.php/AAAI/article/view/6572">
                 <papertitle>Low-variance Black-box Gradient Estimates for the Plackett-Luce Distribution</papertitle>
@@ -213,20 +244,21 @@
               <br>
               <a href="https://arxiv.org/abs/1911.10036">arxiv</a> /
               <a href="https://github.com/agadetsky/pytorch-pl-variance-reduction">code</a> /
-              <a href="data/lowvar.bib">bibtex</a> / <br/>
+              <a href="data/lowvar.bib">bibtex</a> /
               <a href="slides/slides_aaai2020.pdf">AAAI slides</a> /
               <a href="slides/bdl_slides_neurips2019.pdf">BDL slides</a> /
               <a href="posters/bdl_poster_neurips2019.pdf">poster</a>
-              <p></p>
-              <p align="justify">Variance reduction techniques for stochastic optimization w.r.t. a distribution over permutations.</p>
+              <p class="publication-description">Variance reduction techniques for stochastic optimization w.r.t. a distribution over permutations.</p>
             </td>
           </tr>
 
-          <tr onmouseout="condgen_stop()" onmouseover="condgen_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='images/condgen.jpg' height=120px>
+          <tr class="publication">
+            <td class="publication-media">
+                <a class="publication-image-link" href="images/condgen.jpg" target="_blank" rel="noopener" aria-label="Open the conditional generator figure at full size">
+                  <img class="publication-image" src="images/condgen.jpg" alt="Conditional word-definition generator architecture" loading="lazy">
+                </a>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td class="publication-content">
               <a href="https://aclanthology.org/P18-2043/">
                 <papertitle>Conditional Generators of Words Definitions</papertitle>
               </a>
@@ -241,14 +273,13 @@
               <a href="https://github.com/agadetsky/pytorch-definitions">code</a> / 
               <a href="data/condgen.bib">bibtex</a> /
               <a href="posters/poster_acl2018.pdf">poster</a>
-              <p></p>
-              <p align="justify">The generative model for definitions of polysemous words given vector representation of the word and example of its use.</p>
+              <p class="publication-description">The generative model for definitions of polysemous words given vector representation of the word and example of its use.</p>
             </td>
           </tr>
-          <table style="width: 20%" align="center">
-            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=odmVf_iuVXKY_3YScZmCMK_9Cl0OvQXCWfKTnvmQ6xU&cl=ffffff&w=a"></script>
-          </table>
         </tbody></table>
+        <table style="width: 20%" align="center">
+          <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=odmVf_iuVXKY_3YScZmCMK_9Cl0OvQXCWfKTnvmQ6xU&cl=ffffff&w=a"></script>
+        </table>
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td>
